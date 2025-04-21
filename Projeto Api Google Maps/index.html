@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruas Sertão</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+    <button type="button" id="mostrar">Mostrar / Atualizar </button>
+    <button id="limpar">Limpar Polígono Salvo</button>
+    <button id="exportar">Exportar JSON</button>
+
+    <label>Cor do polígono:</label>
+    <input type="color" id="corPoligono" value="#ff0000">
+
+    <div id="listaPoligonos"></div>
+
+
+
+</body>
+<script src="./javascript/drawing.js"></script>
+<script src="javascript/map.js"></script>
+
+
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkVcp0VNMydJ5ArhIkFp512dNi6bMRrSE&callback=initMap&libraries=drawing,geometry"
+    defer>
+    </script>
+
+</html>
